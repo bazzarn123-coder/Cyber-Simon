@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Simon - 3D Memory Game</title>
-    <!-- Browser Address Bar Favicon -->
-    <link rel="icon" type="image/png" href="Simon.png">
+    <!-- Self-contained SVG Favicon for Browser Address Bar -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23050507'/><path d='M50 50 L50 4 A 46 46 0 0 1 96 50 Z' fill='%23e53935'/><path d='M50 50 L96 50 A 46 46 0 0 1 50 96 Z' fill='%2300a2e8'/><path d='M50 50 L50 96 A 46 46 0 0 1 4 50 Z' fill='%23ffcc00'/><path d='M50 50 L4 50 A 46 46 0 0 1 50 4 Z' fill='%2300c853'/></svg>">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Three.js CDN -->
@@ -91,7 +91,8 @@
     <div id="start-screen" class="absolute inset-0 z-20 flex items-center justify-center bg-slate-950/85 backdrop-blur-md">
         <div class="glass-panel max-md:mx-4 p-8 md:p-10 rounded-3xl text-center max-w-md w-full border border-cyan-500/40 shadow-2xl">
             <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-cyan-500/10 border border-cyan-500/40 flex items-center justify-center overflow-hidden">
-                <img src="Simon.png" alt="Simon Device" class="w-12 h-12 object-contain[span_2](start_span)[span_3](start_span)"[span_2](end_span)[span_3](end_span)>
+                <!-- Self-contained SVG Simon Icon matching the physical device -->
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23050507'/><path d='M50 50 L50 4 A 46 46 0 0 1 96 50 Z' fill='%23e53935'/><path d='M50 50 L96 50 A 46 46 0 0 1 50 96 Z' fill='%2300a2e8'/><path d='M50 50 L50 96 A 46 46 0 0 1 4 50 Z' fill='%23ffcc00'/><path d='M50 50 L4 50 A 46 46 0 0 1 50 4 Z' fill='%2300c853'/><circle cx='50' cy='50' r='18' fill='%23050507'/></svg>" alt="Simon Device" class="w-12 h-12 object-contain">
             </div>
             <h2 class="text-3xl font-black font-orbitron tracking-wider text-white mb-2">CYBER SIMON</h2>
             <p class="text-slate-400 text-sm mb-6 leading-relaxed">
